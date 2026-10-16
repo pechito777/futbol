@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: iran_sans_medi;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+    background:
+        linear-gradient(rgba(34, 71, 233, 0.888), rgba(245, 31, 31, 0.75)),
+        url('../imagen/camp-nou.webp');
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+
+    color: white;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(7, 7, 149, 0.92);
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+header .titulo {
+    font-size: 42px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a{
+    color: #fff;
+    margin: 0 20px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #ffd700;
+}
+
+.container {
+    max-width: 1300px;
+    padding: 40px;
+
+    margin-top: 220px;
+}
+
+/* CARRUSEL */
+.carousel {
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+/* TARJETAS DEL CARRUSEL */
+.carousel-item{
+    text-align: center;
+    border-radius: 25px;
+    padding: 40px;
+    min-height: 700px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* IMÁGENES */
+.carousel-item img{
+    width: 70% !important;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    transition: 0.4s ease;
+}
+
+.carousel-item h2,
+.carousel-item h3,
+.carousel-item p,
+.carousel-item li,
+.carousel-item strong{
+    color: white;
+}
+
+/* TITULOS */
+.carousel-item h2{
+    font-size: 55px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.carousel-item h3{
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+/* PÁRRAFOS */
+.carousel-item p{
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 1;
+}
+
+/* LISTAS */
+.carousel-item ul{
+    margin-top: 20px;
+    padding: 0;
+}
+
+.carousel-item li{
+    list-style: none;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+/* BOTONES DEL CARRUSEL */
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    transform: scale(2);
+
+    filter: invert(1);
+}
